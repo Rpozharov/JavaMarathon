@@ -11,7 +11,7 @@ public class Vehicle_Main {
         System.out.println("Модель автомобиля: " + car.getModel() + "; Цвет: " + car.getColor() + "; Год выпуска: "
                 + car.getVehicleYear() + ";");
 
-        Motorbike motorbike = new Motorbike("Хонда", "Красный", 2012);
+        Motorbike motorbike = new Motorbike("Хонда", "Синий", 2012);
 
         System.out.println("Модель мотцикла: " + motorbike.getModel() + "; Цвет: " + motorbike.getColor()
                 + "; Год выпуска: " + motorbike.getVehicleYear() + ";");
