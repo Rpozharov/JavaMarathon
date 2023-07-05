@@ -14,8 +14,7 @@ public class Task2 {
                 break;
             }
 
-            double divResult = dividend / divisor;
-            System.out.println(divResult);
+            System.out.println(dividend / divisor);
         }
     }
 }

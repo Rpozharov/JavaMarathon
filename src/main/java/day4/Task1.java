@@ -38,9 +38,7 @@ public class Task1 {
 
             if (e % 2 == 0) {
                 evenNumbersCount++;
-            }
-
-            if (e % 2 != 0) {
+            } else {
                 oddNumbersCount++;
             }
 

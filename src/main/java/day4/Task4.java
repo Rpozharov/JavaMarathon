@@ -12,21 +12,25 @@ public class Task4 {
             array[i] = random.nextInt(10000);
         }
 
-        int element3Sum;
-        int element3MaxSum = 0;
+        int elementSum = 0;
+        int elementMaxSum = 0;
         int index = 0;
+        int sumCount = 3;
 
-        for (int i = 0; i < array.length - 2; i++) {
-            element3Sum = 0;
-            element3Sum = array[i] + array[i + 1] + array[i + 2];
+        for (int i = 0; i < array.length - sumCount + 1; i++) {
+            for (int j = 0; j < sumCount; j++) {
+                elementSum += array[i + j];
+            }
 
-            if (element3Sum > element3MaxSum) {
-                element3MaxSum = element3Sum;
+            if (elementSum > elementMaxSum) {
+                elementMaxSum = elementSum;
                 index = i;
             }
+
+            elementSum = 0;
         }
 
-        System.out.println(element3MaxSum);
+        System.out.println(elementMaxSum);
         System.out.println(index);
     }
 }
